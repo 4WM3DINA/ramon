@@ -1,6 +1,6 @@
 <?php
 // validacion Login.php
-include ("db.php");
+include ("./database/db.php");
 
 $nombreUsuario = $_POST['usuario'];
 $contraseña = $_POST['contraseña'];

@@ -1,7 +1,7 @@
-<?php include("db.php");
-    //agregar la coneccion con include(documento)
+<?php include("./database/db.php");
+//agregar la coneccion con include(documento)
 ?>
-<?php include ("includes/header.php")?>
+<?php include("includes/header.php") ?>
 
 <div class="container p-4">
     <div class="row">
@@ -9,14 +9,15 @@
         <div class="col-md-4">
             <div class="card">
                 <?php //cuadro de verificacion de guardado
-                if(isset($_SESSION['message'])){ ?>
-                    <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
-                        <?= $_SESSION['message']?>
+                if (isset($_SESSION['message'])) { ?>
+                    <div class="alert alert-<?= $_SESSION['message_type'] ?> alert-dismissible fade show" role="alert">
+                        <?= $_SESSION['message'] ?>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                <?php session_unset(); } ?>
+                <?php session_unset();
+                } ?>
                 <div class="card-header">
                     <h3>Registro de Doctores</h3>
                 </div>
@@ -38,7 +39,7 @@
                             <label for="telefono">Telefono</label>
                             <input type="text" name="telefono" class="form-control" placeholder="Telefono">
                         </div>
-                        
+
                         <input type="submit" class="btn btn-primary btn-block mt-3" name="Registro" value="Registrar">
                     </form>
                 </div>
@@ -53,6 +54,7 @@
                         <th>Rut</th>
                         <th>Especialidad</th>
                         <th>Telefono</th>
+
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -60,7 +62,7 @@
                     <?php
                     $query = "SELECT * FROM registrodoctores";
                     $resultado = mysqli_query($conn, $query);
-                    while($row = mysqli_fetch_array($resultado)){ ?>
+                    while ($row = mysqli_fetch_array($resultado)) { ?>
                         <tr>
                             <td><?php echo $row['nombre_com']; ?></td>
                             <td><?php echo $row['rut']; ?></td>
@@ -85,4 +87,4 @@
 </div>
 
 
-<?php include ("includes/footer.php")?>
+<?php include("includes/footer.php") ?>

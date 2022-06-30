@@ -1,5 +1,5 @@
 <?php
-include ("db.php");
+include ("./database/db.php");
 
 if (isset($_POST['creacion'])){
     $usuario = $_POST['nom_usuario'];

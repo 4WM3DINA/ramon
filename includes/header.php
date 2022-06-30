@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8ce378095c.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Clinica KCV</title>
     <!--boostrap 5-->
 </head>
 <body>
@@ -17,16 +19,13 @@
         <div class="container-fluid">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="home.php">Home</a>
+                    <a class="nav-link text-white" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="registroDoctores.php">Registro Doctores</a>
+                    <a class="nav-link text-white" href="registrodoctores.php">Registro Doctores</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="registroMedicamentos.php">Ingreso Medicamentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="medicamentos.php">Medicamentos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="examenes.php">Examenenes</a>
@@ -34,8 +33,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="login.php">Login</a>
                 </li>
-                <!--login-->
-               
             </ul>
         </div>
     </nav>

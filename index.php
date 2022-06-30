@@ -1,4 +1,4 @@
-<?php include("db.php");
+<?php include("./database/db.php");
     //agregar la coneccion con include(documento)
 ?>
 <?php include ("includes/header.php")?>

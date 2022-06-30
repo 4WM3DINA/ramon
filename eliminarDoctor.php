@@ -1,5 +1,5 @@
 <?php
-    include("db.php");
+    include("./database/db.php");
     //agregar la coneccion con include(documento)
     if (isset($_GET['id'])) {
         $id = $_GET['id'];

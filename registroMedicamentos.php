@@ -1,12 +1,12 @@
-<?php include("db.php");
+<?php include("./database/db.php");
     //agregar la coneccion con include(documento)
 ?>
 <?php include ("includes/header.php")?>
  
 <!--registro de medicamentos-->
 <div class="container p-4">
-    <div>
-        <div class="col- mx-auto">
+    <div class="row">
+        <div class="col- md-4">
             <div class=" card card-body">
             <?php //cuadro de verificacion de guardado
                 if(isset($_SESSION['message'])){ ?>
@@ -42,10 +42,12 @@
                     </div>
                     <input type="submit" class="btn btn-primary btn-block mt-3" name="Guardar" value="Registrar">
                 </form>
-                
             </div>
         </div>
+        
     </div>
+    
 </div>
+
 
 <?php include ("includes/footer.php")?>

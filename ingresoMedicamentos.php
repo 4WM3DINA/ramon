@@ -1,6 +1,6 @@
 <?php
 
-include("db.php");
+include("./database/db.php");
 
 if (isset($_POST['Guardar'])) {
     $nombre = $_POST['nombre'];
